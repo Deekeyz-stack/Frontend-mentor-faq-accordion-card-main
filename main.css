@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: flex;
+    font-size: 12px;
+}
+
+.section{
+    margin-left: 22%;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:50vh;
+    background:#fff;
+    background-image: url('./images/bg-pattern-desktop.svg'), url('./images/illustration-woman-online-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40%;
+    border-radius: 20px;
+    width: 700px;
+    height: 400px;
+    margin: 150px auto;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.container{
+    margin-top: -20px;
+    font-size: 12px;
+    margin-left: 28%;
+    padding-left: 80px;
+    width: 400px;
+}
+
+.question{
+    display: flex;
+    font-weight: 400;
+    padding: 15px 0px 15px 0px;
+    color: #000;
+}
+
+.question:hover{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#arrow-down{
+    align-items: justify;
+    width: 10px;
+    height: 7px;
+    margin-top: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#arrow-down:hover{
+    background-color: hsl(273, 75%, 66%);
+}
+
+.question-text{
+    display: none;
+}
+
+.show-question .question-text{
+    display: block;
+}
+
+#arrow-up {
+    transform: translateY(-100%);
+}
+
+@media screen and (max-width:400px) {
+
+    .section{
+        background-image: url('./images/illustration-woman-online-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 40% -1%;
+        background-size: 60%;
+    }
+
+    .main{
+        background-image: url('./images/bg-pattern-mobile.svg');
+        background:#fff;
+        border-radius: 20px;
+        width: 330px;
+        height: 550px;
+        margin: 120px 80px 120px 20px;
+    }
+
+    .header h2{
+        margin-left: -40px;
+    }
+    
+
+    .question{
+        flex-direction: column;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: -80%;
+        color: #000;
+    }
+
+    hr{
+        margin-left: -80%;
+        width: 172%;
+    }
+
+    .question-text{
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: -80%;
+    }
+
+}
